@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products CRUD Web App</title>
+    <link rel="stylesheet" href="index6.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Products CRUD Web App</h1>
+        
+        <div class="form-container">
+            <h2>Add / Edit Product</h2>
+            <input type="text" id="productName" placeholder="Product Name">
+            <input type="number" id="productPrice" placeholder="Product Price">
+            <textarea id="productDescription" placeholder="Product Description"></textarea>
+            <input type="number" id="productRating" placeholder="Product Rating (1-5)" min="1" max="5">
+            <input type="text" id="productImage" placeholder="Product Image URL">
+            <button onclick="addOrUpdateProduct()">Save Product</button>
+        </div>
+
+        <h2>Product List</h2>
+        <div id="productsList"></div>
+    </div>
+
+    <script src="index6.js"></script>
+</body>
+</html>
